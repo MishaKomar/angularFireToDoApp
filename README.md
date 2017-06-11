@@ -1,7 +1,8 @@
-$cd AngularFireToDoApp
 
-$npm install 
+$ git clone https://github.com/MishaKomar/angularFireToDoApp.git
+$ cd AngularFireToDoApp
 
-and after
+$ npm install
+$ ng serve 
 
-$ng serve - for a dev server. Navigate to `http://localhost:4200/`.
+##Navigate to `http://localhost:4200/`.
