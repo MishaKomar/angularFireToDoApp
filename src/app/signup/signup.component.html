@@ -1,0 +1,13 @@
+<header>
+  	<h1> Test ToDo Application </h1>
+</header>
+<main>
+  <h3>Join now</h3>
+  <span class="error" *ngIf="error">{{ error }}</span>
+  <form #formData='ngForm' class="login-form" (ngSubmit)="onSubmit(formData)">
+    <input type="text" placeholder="Email" (ngModel)="email" name="email" required>
+    <input type="password" placeholder="Password" (ngModel)="password" name="password" required>
+    <button type="submit" [disabled]="!formData.valid">Create my account</button>
+  </form>
+	<a routerLink="/login" routerLinkActive="active">Have an account? <strong>Login</strong></a>
+</main>
